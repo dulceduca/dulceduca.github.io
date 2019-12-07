@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="google" content="notranslate" />
-    <title>Home</title>
+    <title>Contact</title>
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="static/img/favicon/apple-icon-57x57.png">
@@ -116,28 +116,84 @@
     </nav>
 
     <main>
-        <section class="full-img" style="background-image: url(static/img/index.jpg)"></section>
+        <section class="container">
+    <h1>contact</h1>
+</section>
 
-<section class="container content">
-    <h1>The Company</h1>
+<section id="contact" class="container flex column">
+    <!-- <form method="post" action="php/_contact.php"> -->
+    <form action="https://formspree.io/xwkkpjzd" method="POST">
 
-    <div class="language">
-        <div class="english">
-            <p>Dulce Duca conceives absurd and surrealistic shows, that will make you laugh or run away. </p>
-            <p>She never won any prize but she thinks the audience loves her.</p>
-            <p>Never the less she has performed already in 10 countries including Mexico, Brasil, Cabo Verde...</p>
+        <div>
+            <label>Name</label>
+            <input type="text" name="name">
         </div>
-        <div class="espanol">
-            <p>Dulce Duca concibe espectáculos absurdos y surrealistas, que te harán reír o huir.</p>
-            <p>Nunca ganó ningún prémio, pero cree que el publico la adora... Sin embargo, ella ha actuado ya en 10 países, incluidos México, Brasil, Cabo Verde...</p>
+
+        <div>
+            <label>Email</label>
+            <input type="email" name="email">
         </div>
+
+        <div>
+            <label>Website</label>
+            <input type="text" name="website">
+        </div>
+
+        <div>
+            <label>Name</label>
+            <textarea name="message"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</section>
+
+<section id="social" class="container">
+    <a href="tel:+34651752868">
+        <svg>
+            <use href="static/img/icons.svg#phone"></use>
+        </svg>
+        <span>+34 651 752 868</span>
+    </a>
+    <a href="+4407523243654">
+        <svg>
+            <use href="static/img/icons.svg#phone"></use>
+        </svg>
+        <span>+44 (0)7523243654</span>
+    </a>
+    <a href="mailto:dulceduca.dif@gmail.com">
+        <svg>
+            <use href="static/img/icons.svg#email"></use>
+        </svg>
+        <span>dulceduca.dif@gmail.com</span>
+    </a>
+    <a href="#">
+        <svg>
+            <use href="static/img/icons.svg#facebook"></use>
+        </svg>
+        <span>Facebook</span>
+    </a>
+    <a href="#">
+        <svg>
+            <use href="static/img/icons.svg#instagram"></use>
+        </svg>
+        <span>Instagram</span>
+    </a>
+</section>
+
+<section class="container sponsors">
+
+    <div class="flex row">
+        <a href="https://www.artscouncil.org.uk/" target="_blank">
+            <img src="static/img/sponsors/Arts-Council-England-logo.png" class="black">
+        </a>
     </div>
 </section>
 
-<section class="container grid-img two horizontal">
-    <img src="static/img/index-1.jpg">
-    <img src="static/img/index-2.jpg">
-</section>    </main>
+
+    </main>
 
     <section id="modal-bg"></section>
 
