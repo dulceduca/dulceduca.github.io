@@ -776,14 +776,10 @@ a > svg {
     margin-bottom: 0; }
   #calender p {
     line-height: 1.2;
-    max-height: 0;
     -webkit-transition: 240ms ease;
     -o-transition: 240ms ease;
     transition: 240ms ease;
-    overflow: hidden;
     opacity: 0.5; }
-  #calender > div:hover p {
-    max-height: 500px; }
   #calender > div {
     text-align: left;
     border-color: var(--grey, #D0D0D0);
@@ -793,7 +789,11 @@ a > svg {
     -webkit-transition: 240ms ease;
     -o-transition: 240ms ease;
     transition: 240ms ease; }
+    #calender > div * {
+      -webkit-transition: 240ms ease;
+      -o-transition: 240ms ease;
+      transition: 240ms ease; }
     #calender > div:hover {
       background-color: var(--black, #000000); }
-      #calender > div:hover h2, #calender > div:hover h5 {
+      #calender > div:hover h2, #calender > div:hover h5, #calender > div:hover p {
         color: var(--white, #FFFFFF); }
