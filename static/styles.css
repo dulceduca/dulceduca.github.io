@@ -754,7 +754,7 @@ a > svg {
   grid-gap: 2.5vh;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr); }
-  @media (max-width: 1260px) {
+  @media (max-width: 1400px) {
     #calender {
       -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr); } }
