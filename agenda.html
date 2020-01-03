@@ -125,6 +125,7 @@
     <div v-for="product in items">
         <h5>{{ product.date }}</h5>
         <h2>{{ product.title }}</h2>
+        <p v-if="product.desc != null">{{ product.desc }}</p>
     </div>
 
 </section>
@@ -136,76 +137,79 @@
     data: {
         items: [
             {
-                "date": "26 & 27 Enero",
-                "title": "Orquestra Malabares"
-            },
-            {
-                "date": "7 Fev",
-                "title": "Orquestra Malabares"
-            },
-            {
                 "date": "February",
-                "title": "Orquestra Malabares"
+                "title": "Filming Marco Martins",
+                "desc": ""
             },
             {
-                "date": "13 fev",
-                "title": "Orquestra Malabares"
+                "date": "15 February",
+                "title": "Dulce Duca",
+                "desc": "DULCE DUCA FADO EXPERIENCE"
             },
             {
-                "date": "15 fev",
-                "title": "Dulce Duca"
+                "date": "14 March",
+                "title": "Dulce Duca",
+                "desc": "DULCE DUCA FADO EXPERIENCE"
             },
             {
-                "date": "20 fev",
-                "title": "Orquestra Malabares"
+                "date": "11 - 25 April",
+                "title": "Dulce Duca",
+                "desc": "DULCE DUCA FADO EXPERIENCE"
             },
             {
-                "date": "23 fev",
-                "title": "Orquestra Malabares"
+                "date": "16 May",
+                "title": "Dulce Duca",
+                "desc": "DULCE DUCA FADO EXPERIENCE"
             },
             {
-                "date": "13 mar",
-                "title": "Orquestra Malabares"
+                "date": "8 - 10 May",
+                "title": "Orquestra Malabares",
+                "desc": "Pistacatro TRAPEZI"
             },
             {
-                "date": "22 mar",
-                "title": "Orquestra Malabares"
+                "date": "16 May",
+                "title": "Dulce Duca",
+                "desc": "DULCE DUCA FADO EXPERIENCE"
             },
             {
-                "date": "27 mar",
-                "title": "Orquestra Malabares"
+                "date": "31 May",
+                "title": "Um Belo Dia",
+                "desc": "Dulce Duca"
             },
             {
-                "date": "29 mar",
-                "title": "Orquestra Malabares"
+                "date": "June",
+                "title": "SWEET DRAMA",
+                "desc": "Carlowarts Festival Scotland"
             },
             {
-                "date": "22, 23 maio",
-                "title": "Orquestra Malabares"
+                "date": "13 June",
+                "title": "Dulce Duca",
+                "desc": "DULCE DUCA FADO EXPERIENCE"
             },
             {
-                "date": "29 maio",
-                "title": "Orquestra Malabares"
+                "date": "18 - 20 June",
+                "title": "Dulce Duca",
+                "desc": "Sweet Drama - Strada"
             },
             {
-                "date": "12 junho",
-                "title": "Orquestra Malabares"
+                "date": "18 July",
+                "title": "Dulce Duca",
+                "desc": "ULCE DUCA FADO EXPERIENC"
             },
             {
-                "date": "27 junho",
-                "title": "Orquestra Malabares"
+                "date": "26 July",
+                "title": "SWEET DRAMA",
+                "desc": "VAUDEVILLE R"
             },
             {
-                "date": "10 jul",
-                "title": "Orquestra Malabares"
+                "date": "30 & 31 July",
+                "title": "UM BELO DIA",
+                "desc": "Olala Festival"
             },
             {
-                "date": "26 julho",
-                "title": "SWEET DRAMA"
-            },
-            {
-                "date": "30, 31 julho",
-                "title": "UM BELO DIA"
+                "date": "15 & 16 September",
+                "title": "Orquestra Malabares",
+                "desc": "Out There Festival"
             }
         ]
     }

@@ -769,9 +769,10 @@ a > svg {
   #calender h2 {
     font-size: 2.25rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0; }
   #calender h5 {
     font-size: 1.5rem;
+    margin-top: 0;
     margin-bottom: 0; }
   #calender p {
     line-height: 1.2;

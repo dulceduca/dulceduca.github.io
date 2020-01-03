@@ -275,14 +275,24 @@ a > svg
     display: grid
     grid-gap: 2.5vh
     grid-template-columns: repeat(4, 1fr)
+
+    @media (max-width: 1400px)
+        grid-template-columns: repeat(3, 1fr)
+    
+    @media (max-width: $breakpoint-xl)
+        grid-template-columns: repeat(3, 1fr)
+    
+    @media (max-width: $breakpoint-sm)
+        grid-template-columns: repeat(2, 1fr)
     
     h2
         font-size: 2.25rem
         margin-top: 0.5rem
-        margin-bottom: 0.5rem
+        margin-bottom: 0
 
     h5
         font-size: 1.5rem
+        margin-top: 0
         margin-bottom: 0
     
     p
