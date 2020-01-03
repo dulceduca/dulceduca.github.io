@@ -754,6 +754,18 @@ a > svg {
   grid-gap: 2.5vh;
   -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 1260px) {
+    #calender {
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 1260px) {
+    #calender {
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 780px) {
+    #calender {
+      -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr); } }
   #calender h2 {
     font-size: 2.25rem;
     margin-top: 0.5rem;
