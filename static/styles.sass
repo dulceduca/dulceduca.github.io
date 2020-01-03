@@ -297,25 +297,22 @@ a > svg
     
     p
         line-height: 1.2
-        max-height: 0
         transition: 240ms ease
-        overflow: hidden
         opacity: 0.5
-    
-    > div:hover p
-        max-height: 500px
 
     > div
         text-align: left
         border-color: var(--grey, $grey)
         border-style: solid
         border-width: 1px
-        //border-bottom-width: 1px
         padding: 2.5vw
         transition: 240ms ease
+
+        *
+            transition: 240ms ease
         
         &:hover
             background-color: var(--black, $black)
 
-            h2, h5
+            h2, h5, p
                 color: var(--white, $white)
