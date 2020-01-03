@@ -122,102 +122,98 @@
 
 <section id="calender" class="container">
 
-    <div>
-        <h5>26 &amp; 27 Enero</h5>
-        <h2>ORQ</h2>
+    <div v-for="product in items">
+        <h5>{{ product.date }}</h5>
+        <h2>{{ product.title }}</h2>
     </div>
 
-    <div>
-        <h5>7 Fev</h5>
-        <h2>ORQ</h2>
-    </div>
+</section>
 
-    <div>
-        <h5>February</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>13 fev</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>15 fev</h5>
-        <h2>dd</h2>
-    </div>
-
-    <div>
-        <h5>20 fev</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>23 fev</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>13 mar</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>22 mar</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>27 mar</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>29 mar</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>22, 23 maio</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>29 maio</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>12 junho</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>27 junho</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>10 jul</h5>
-        <h2>ORQ</h2>
-    </div>
-
-    <div>
-        <h5>26 julho</h5>
-        <h2>SWEET DRAMA</h2>
-    </div>
-
-    <div>
-        <h5>30, 31 julho</h5>
-        <h2>UM BELO DIA</h2>
-    </div>
-
-</section>    </main>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+    var app = new Vue({
+    el: '#calender',
+    data: {
+        items: [
+            {
+                "date": "26 & 27 Enero",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "7 Fev",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "February",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "13 fev",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "15 fev",
+                "title": "Dulce Duca"
+            },
+            {
+                "date": "20 fev",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "23 fev",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "13 mar",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "22 mar",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "27 mar",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "29 mar",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "22, 23 maio",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "29 maio",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "12 junho",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "27 junho",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "10 jul",
+                "title": "Orquestra Malabares"
+            },
+            {
+                "date": "26 julho",
+                "title": "SWEET DRAMA"
+            },
+            {
+                "date": "30, 31 julho",
+                "title": "UM BELO DIA"
+            }
+        ]
+    }
+});
+</script>    </main>
 
     <section id="modal-bg"></section>
 
-    <!-- Javascript -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
     <script src="/static/script.js"></script>
     
 </body>
