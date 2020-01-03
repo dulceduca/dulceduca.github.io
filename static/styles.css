@@ -779,7 +779,8 @@ a > svg {
     -webkit-transition: 240ms ease;
     -o-transition: 240ms ease;
     transition: 240ms ease;
-    opacity: 0.5; }
+    opacity: 0.5;
+    margin-bottom: 0; }
   #calender > div {
     text-align: left;
     border-color: var(--grey, #D0D0D0);
