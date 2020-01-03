@@ -1,0 +1,199 @@
+main
+    // Space for side nav on desktop
+    @media (min-width: $breakpoint-xl + 1)
+        margin-left: var(--nav-width, $nav-width)
+
+main > section
+    
+    // Desktop
+    @media (min-width: $breakpoint-xl + 1)
+
+        //&:not(.content)
+        margin-bottom: 10vh
+
+        // If page starts with .content, add margin top
+        &:first-of-type:not(.full-img):not(.inline-img)
+            margin-top: 5vh
+
+    // Mobile
+    @media (max-width: $breakpoint-xl) 
+
+        &:not(.content)
+            margin-bottom: 5vh
+
+        &:first-of-type:not(.full-img):not(.inline-img)
+            margin-top: 5vh
+        
+        &:not(.full-img):not(.inline-img)
+            margin-left: calc(4rem + 2.5vw)
+
+main > section.content
+
+
+    h1
+        margin-bottom: 0.5rem
+
+    h1 + h5
+        margin-bottom: 1rem
+        
+    h1 + p,
+    h1 + h5 + p
+        margin-bottom: 2rem
+
+    p > span
+        font-weight: bold
+
+main > section.inline-img img
+    width: 100%
+
+main > section.content + .content,
+main > section.content + .sponsors
+    margin-top: 5vh
+
+// If .content is followed by..., add vertical padding
+main > section.content + .full-img,
+main > section.content + .inline-img,
+main > section.content + .grid-img,
+main > section.content + .video
+    @media (min-width: $breakpoint-xl + 1) 
+        margin-top: 10vh
+    
+    @media (max-width: $breakpoint-xl)
+        margin-top: 5vh
+
+// Full Image        
+main > section.full-img
+    width: 100%
+    height: 75vh
+    overflow: hidden
+    background-size: cover
+    background-position: center
+
+// Grid Image
+.grid-img
+    display: grid
+    grid-gap: 2.5vh
+
+    div
+        background-color: #eeeeee
+        background-size: cover
+        background-position: center
+
+        @media (min-width: $breakpoint-sm + 1)
+            height: 60vh
+        
+    img
+        width: 100%
+
+    &.type-t
+        @media (min-width: $breakpoint-sm + 1)
+            grid-template-columns: repeat(2, 1fr)
+
+            div:first-of-type
+                grid-column: 1/span 2
+                grid-row: 1
+            
+            div:nth-of-type(2)
+                grid-column: 1
+                grid-row: 2
+
+            div:last-of-type
+                grid-column: 2
+                grid-row: 2
+        
+        @media (max-width: $breakpoint-sm)
+            grid-template-columns: repeat(1, 1fr)
+    
+    &.type-e
+        @media (min-width: $breakpoint-sm + 1)
+            grid-template-columns: repeat(2, 1fr)
+
+            div:first-of-type
+                height: 100%
+                grid-column: 1
+                grid-row: 1/span 2
+            
+            div:nth-of-type(2)
+                grid-column: 2
+                grid-row: 1
+
+            div:last-of-type
+                grid-column: 2
+                grid-row: 2
+        
+        @media (max-width: $breakpoint-sm)
+            grid-template-columns: repeat(1, 1fr)
+
+            div:first-of-type
+                height: 100%
+
+    &.type-h
+        @media (min-width: $breakpoint-sm + 1)
+            grid-template-columns: repeat(2, 1fr)
+
+            div:first-of-type
+                grid-column: 1
+                grid-row: 1/span 2
+
+            div:last-of-type
+                grid-column: 2
+                grid-row: 1/span 2
+        
+        @media (max-width: $breakpoint-sm)
+            grid-template-columns: repeat(1, 1fr)
+
+            div
+                height: 100%
+    
+    &.two.horizontal
+        grid-template-columns: repeat(1, 1fr)
+
+        div
+            grid-column: 1
+
+// Language
+main > section.content .language
+    display: grid
+
+    + p
+        @media (min-width: $breakpoint-xl + 1)
+            margin-top: 5vh
+
+        @media (max-width: $breakpoint-xl) 
+            margin-top: 2.5vh
+
+    .english
+        a
+            color: #121212
+            border-bottom-color: #121212
+    
+    .espanol
+        color: #a2a2a2
+    
+        a
+            color: #6e6e6e
+            border-bottom-color: #6e6e6e
+    
+    @media (min-width: $breakpoint-sm + 1)
+        grid-gap: 2.5vh
+        grid-template-columns: repeat(2, 1fr)
+    
+    @media (max-width: $breakpoint-xl)
+        grid-gap: 2.5vh
+        grid-template-columns: repeat(1, 1fr)
+
+.grid-img > div
+    position: relative
+    overflow: hidden
+
+    @media (min-width: $breakpoint-sm + 1)
+        img,
+        picture,
+        picture > img
+            min-height: calc(100% + 0.5rem)
+            width: calc(100% + 0.5rem)
+            object-fit: cover
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
