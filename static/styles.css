@@ -872,6 +872,12 @@ form > div:not(:last-of-type) {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+#social a.button {
+  color: var(--white, #FFFFFF);
+}
+#social a.button svg {
+  fill: var(--white, #FFFFFF);
+}
 #social a > svg {
   max-width: 1.5rem;
   max-height: 1.5rem;
