@@ -62,7 +62,7 @@
                 <a href="#" onclick="return false;">Shows</a>
                 <div class="dropdown-container">
                     <div class="dropdown flex column">
-                        <a href="/shows/sweet-drama" class="item">Sweet Drama</a>
+                        <a href="/shows/roll-with-it" class="item">Roll With It</a>
                         <!-- <a href="/shows/an-extraordinary-day" class="item">Um Dia Extraordinário</a> -->
                         <a href="/shows/an-extraordinary-day" class="item">An Extraordinary Day</a>
                         <a href="/shows/um-belo-dia-outdoors" class="item">Um Belo Dia Outdoors</a>
@@ -84,10 +84,14 @@
             </div>
 
             <div class="item">
+                <a href="/global-norfolk">Dulce Duca's Global Norfolk</a>
+            </div>
+
+            <div class="item">
                 <a href="#" onclick="return false;">GALLERY</a>
                 <div class="dropdown-container">
                     <div class="dropdown flex column">
-                        <a href="/gallery/sweet-drama" class="item">Sweet Drama</a>
+                        <a href="/gallery/roll-with-it" class="item">Roll With It</a>
                         <a href="/gallery/an-extraordinary-day" class="item">An Extraordinary Day</a>
                         <a href="/gallery/um-belo-dia-outdoors" class="item">Um Belo Dia Outdoors</a>
                         <a href="/gallery/just-full" class="item">Just Full</a>
@@ -120,161 +124,16 @@
     <h1>Agenda</h1>
 </section>
 
-<section id="calender" class="container">
+<section  class="container">
 
-    <div v-for="product in items">
-        <h5>{{ product.date }}</h5>
-        <h2>{{ product.title }}</h2>
-        <p v-if="product.desc != null">{{ product.desc }}</p>
-    </div>
+    <h2>Check out our Facebook page for the latest dates and news.</h2>
+    <p>
+        <a class="button" href="https://www.facebook.com/ciaDULCEDUCA" target="_blank">Visit Facebook Page</a>
+    </p>
 
+    
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script>
-    var app = new Vue({
-    el: '#calender',
-    data: {
-        items: [
-            {
-                "date": "26 & 27 January",
-                "title": "Orquestra Malabares",
-                "desc": "Gijon, ES"
-            },
-            {
-                "date": "February",
-                "title": "Featuring in the new film of Marco Martins",
-                "desc": "Great Yarmouth, UK"
-            },
-            {
-                "date": "07 Febuary",
-                "title": "Orquestra Malabares",
-                "desc": "Miranda de Ebro, ES"
-            },
-            {
-                "date": "15 Febuary",
-                "title": "Dulce Duca Fado Experience",
-                "desc": "Great Yarmouth, UK"
-            },
-            {
-                "date": "21 Febuary",
-                "title": "Orquestra Malabares",
-                "desc": "Palencia, ES"
-            },
-            {
-                "date": "23 Febuary",
-                "title": "Orquestra Malabares",
-                "desc": "Laguna de Duero, ES"
-            },
-            {
-                "date": "13 March",
-                "title": "Orquestra Malabares",
-                "desc": "Eira, ES"
-            },
-            {
-                "date": "22 March",
-                "title": "Orquestra Malabares",
-                "desc": "Teatro Circo Murcia, ES"
-            },
-            {
-                "date": "27 March",
-                "title": "Orquestra Malabares",
-                "desc": "Feria Circo Gandia, ES"
-            },
-            {
-                "date": "29 March",
-                "title": "Orquestra Malabares",
-                "desc": "Sevilla, ES"
-            },
-            {
-                "date": "18 April",
-                "title": "Orquestra Malabares",
-                "desc": "Altsasua, ES"
-            },
-            {
-                "date": "03 May",
-                "title": "Orquestra Malabares",
-                "desc": "Medina de Campo, ES"
-            },
-            {
-                "date": "08 May",
-                "title": "Orquestra Malabares",
-                "desc": "Fit al Carrer Vilareal, ES"
-            },
-            {
-                "date": "15 May",
-                "title": "Orquestra Malabares",
-                "desc": "Mislata, ES"
-            },
-            {
-                "date": "22 & 23 May",
-                "title": "Orquestra Malabares",
-                "desc": "Tac Valladolid, ES"
-            },
-            {
-                "date": "29 May",
-                "title": "Orquestra Malabares",
-                "desc": "Soria, ES"
-            },
-            {
-                "date": "31 May",
-                "title": "UM BELO DIA",
-                "desc": "Netherland"
-            },
-            {
-                "date": "12 June",
-                "title": "Orquestra Malabares",
-                "desc": "Victoria, ES"
-            },
-            {
-                "date": "27 June",
-                "title": "Orquestra Malabares",
-                "desc": "Meano, ES"
-            },
-            {
-                "date": "10 July",
-                "title": "Orquestra Malabares",
-                "desc": "Benicarlo, ES"
-            },
-            {
-                "date": "26 July",
-                "title": "Sweet Drama",
-                "desc": "Vaudeville Rendez Vous, PT"
-            },
-            {
-                "date": "30 & 31 July",
-                "title": "UM BELO DIA",
-                "desc": "OLALA Festival, Austria"
-            },
-            {
-                "date": "31 August",
-                "title": "Orquestra Malabares",
-                "desc": "Vilalba, ES"
-            },
-            {
-                "date": "10 September",
-                "title": "Orquestra Malabares",
-                "desc": "Arangada del rey, ES"
-            },
-            {
-                "date": "17 October",
-                "title": "Orquestra Malabares",
-                "desc": "Circarte, ES"
-            },
-            {
-                "date": "24 & 25 October",
-                "title": "Orquestra Malabares",
-                "desc": "Festival Cornella, ES"
-            },
-            {
-                "date": "13 November",
-                "title": "Orquestra Malabares",
-                "desc": "Albobendas, ES"
-            }
-        ]
-    }
-});
-</script>
     </main>
 
     <section id="modal-bg"></section>
