@@ -94,6 +94,11 @@ nav {
   border-right: 1px solid var(--grey, #D0D0D0);
   z-index: 1;
 }
+@media (max-width: 780px) {
+  nav {
+    overflow-x: auto;
+  }
+}
 @media (max-width: 1260px) {
   nav {
     width: 75vw;
@@ -102,7 +107,6 @@ nav {
             transform: translateX(-100%);
     z-index: 99;
     -webkit-transition: 240ms ease;
-    -o-transition: 240ms ease;
     transition: 240ms ease;
   }
 }
@@ -193,7 +197,6 @@ nav .menu .item:last-of-type {
     z-index: -1;
     margin-top: -50vh;
     -webkit-transition: 240ms ease;
-    -o-transition: 240ms ease;
     transition: 240ms ease;
   }
   nav .menu .item .dropdown-container .item {
@@ -209,7 +212,6 @@ nav .menu .item:last-of-type {
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
     -webkit-transition: 80ms ease;
-    -o-transition: 80ms ease;
     transition: 80ms ease;
     margin-top: calc(75vh - 1px);
   }
@@ -225,7 +227,6 @@ nav .menu .item:last-of-type {
   }
   nav .menu .item:hover .dropdown, nav .menu .item:focus-within .dropdown {
     -webkit-transition: 240ms ease;
-    -o-transition: 240ms ease;
     transition: 240ms ease;
     -webkit-transform: translateX(0%);
         -ms-transform: translateX(0%);
@@ -246,13 +247,11 @@ nav .menu .item:last-of-type {
     overflow: hidden;
     max-height: 0;
     -webkit-transition: 360ms ease;
-    -o-transition: 360ms ease;
     transition: 360ms ease;
     background-color: var(--light-grey, #F8F8F8);
   }
   nav .menu .item:hover .dropdown-container, nav .menu .item:focus-within .dropdown-container {
     -webkit-transition: 360ms ease;
-    -o-transition: 360ms ease;
     transition: 360ms ease;
     max-height: 400px;
   }
@@ -281,7 +280,6 @@ nav .copyright span {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-transition: 240ms ease;
-  -o-transition: 240ms ease;
   transition: 240ms ease;
 }
 #mobile-menu.invert {
@@ -350,17 +348,17 @@ main > section.content + .sponsors {
 
 @media (min-width: 1261px) {
   main > section.content + .full-img,
-main > section.content + .inline-img,
-main > section.content + .grid-img,
-main > section.content + .video {
+  main > section.content + .inline-img,
+  main > section.content + .grid-img,
+  main > section.content + .video {
     margin-top: 10vh;
   }
 }
 @media (max-width: 1260px) {
   main > section.content + .full-img,
-main > section.content + .inline-img,
-main > section.content + .grid-img,
-main > section.content + .video {
+  main > section.content + .inline-img,
+  main > section.content + .grid-img,
+  main > section.content + .video {
     margin-top: 5vh;
   }
 }
@@ -541,8 +539,8 @@ main > section.content .language .espanol a {
 }
 @media (min-width: 781px) {
   .grid-img > div img,
-.grid-img > div picture,
-.grid-img > div picture > img {
+  .grid-img > div picture,
+  .grid-img > div picture > img {
     min-height: calc(100% + 0.5rem);
     width: calc(100% + 0.5rem);
     -o-object-fit: cover;
@@ -783,10 +781,6 @@ blockquote p {
   position: relative;
 }
 
-.sponsors:not(:last-of-type):not(+ section:not(.sponsors)) {
-  margin-bottom: 0;
-}
-
 .sponsors .flex.row {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -980,7 +974,6 @@ a > svg {
 #calender p {
   line-height: 1.2;
   -webkit-transition: 240ms ease;
-  -o-transition: 240ms ease;
   transition: 240ms ease;
   opacity: 0.5;
   margin-bottom: 0;
@@ -992,12 +985,10 @@ a > svg {
   border-width: 1px;
   padding: 2.5vw;
   -webkit-transition: 240ms ease;
-  -o-transition: 240ms ease;
   transition: 240ms ease;
 }
 #calender > div * {
   -webkit-transition: 240ms ease;
-  -o-transition: 240ms ease;
   transition: 240ms ease;
 }
 #calender > div:hover {

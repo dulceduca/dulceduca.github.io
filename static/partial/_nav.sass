@@ -8,6 +8,9 @@ nav
     border-right: 1px solid var(--grey, $grey)
     z-index: 1
 
+    @media (max-width: $breakpoint-sm)
+        overflow-x: auto
+
     @media (max-width: $breakpoint-xl)
         width: 75vw
         transform: translateX(-100%)
