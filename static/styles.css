@@ -182,11 +182,9 @@ nav .menu .item:last-of-type {
     top: 0;
     left: var(--nav-width, 14vw);
     width: calc(var(--nav-width, 14vw) * 1.5);
-    height: 300vh;
+    height: calc(100vh - var(--offset, 0px));
     overflow-x: hidden;
     pointer-events: none;
-    margin-top: -1px;
-    margin-top: -75vh;
   }
   nav .menu .item .dropdown-container:after {
     height: 400vh;
@@ -195,9 +193,9 @@ nav .menu .item:last-of-type {
     position: fixed;
     content: "";
     z-index: -1;
-    margin-top: -50vh;
     -webkit-transition: 240ms ease;
     transition: 240ms ease;
+    top: 0;
   }
   nav .menu .item .dropdown-container .item {
     overflow: hidden;
@@ -213,7 +211,6 @@ nav .menu .item:last-of-type {
             transform: translateX(-100%);
     -webkit-transition: 80ms ease;
     transition: 80ms ease;
-    margin-top: calc(75vh - 1px);
   }
   nav .menu .item:hover .dropdown-container, nav .menu .item:focus-within .dropdown-container {
     pointer-events: all;
